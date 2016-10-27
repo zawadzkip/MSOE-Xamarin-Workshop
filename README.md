@@ -3,7 +3,7 @@
 - [Install Docs](#install)
   - [Mac Install](#mac)
   - [Windows Install](#windows)
-  - [Xamarin Android Player](#xamarinandroidplayer)
+  - [Xamarin Android Player](#xamarin-android-player)
   - [Finalizing Install](#finalizing)
 
 ## Install
