@@ -49,4 +49,5 @@ Now after you have installed everything, open either Visual Studio or Xamarin St
 ![Create](http://image.prntscr.com/image/0bcbf276947949bfae1ece8d01ddcb66.png)
 #### Run
 ![Run](http://image.prntscr.com/image/09f7e541a34044d3bf400763ec4256bf.png)
+<br>
 Right click on the .Droid project and select "Set as startup project", then as long as you have an Android device connected or a Xamarin Android Player emulator installed, you will be able to run your project. Go ahead and do that, if you build and an app pops up. *Congrats! You're ready to code!*
