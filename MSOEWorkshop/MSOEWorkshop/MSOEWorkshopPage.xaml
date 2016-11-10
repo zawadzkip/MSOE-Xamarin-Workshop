@@ -1,11 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:local="clr-namespace:MSOEWorkshop"
-	x:Class="MSOEWorkshop.MSOEWorkshopPage">
-	<Label
-		Text="Welcome to Xamarin Forms!"
-		VerticalOptions="Center"
-		HorizontalOptions="Center" />
+	x:Class="MSOEWorkshop.MSOEWorkshopPage"
+	xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
+	<Grid Padding="5">
+	<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"></RowDefinition>
+			<RowDefinition Height="Auto"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="Auto"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Label Text="Welcome to the MSOE Workshop App!" FontSize="Large" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"></Label>
+		<Button Text="Camera" x:Name="cameraButton" Grid.Row="1" Grid.Column="0"></Button>
+		<controls:CircleImage Aspect="AspectFill" 
+				x:Name="circleImage"
+				VerticalOptions="CenterAndExpand"
+				HorizontalOptions="CenterAndExpand"
+				MinimumWidthRequest="100"
+				MinimumHeightRequest="100">
+		</controls:CircleImage>
+	</Grid>
 </ContentPage>
