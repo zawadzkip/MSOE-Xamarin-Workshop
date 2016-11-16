@@ -5,6 +5,7 @@
   - [Windows Install](#windows)
   - [Xamarin Android Player](#xamarin-android-player)
   - [Finalizing Install](#finalizing)
+- [Microsoft Emotion API](#microsoft-emotion-api)
 
 ## Install
 <br><b>Windows and Mac Only<br>
@@ -51,3 +52,6 @@ Now after you have installed everything, open either Visual Studio or Xamarin St
 ![Run](http://image.prntscr.com/image/09f7e541a34044d3bf400763ec4256bf.png)
 <br>
 Right click on the .Droid project and select "Set as startup project", then as long as you have an Android device connected or a Xamarin Android Player emulator installed, you will be able to run your project. Go ahead and do that, if you build and an app pops up. *Congrats! You're ready to code!*
+
+### Microsoft Emotion API
+[Sign up](https://www.microsoft.com/cognitive-services/en-us/emotion-api) for the emotion api and fill in the portion of the application where it states "API_KEY", with your API key, *note* you may need to create a Microsoft account to do so, the GitHub OAuth doesn't seem to work well.
