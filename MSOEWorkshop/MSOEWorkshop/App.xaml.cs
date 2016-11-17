@@ -7,8 +7,7 @@ namespace MSOEWorkshop
 		public App ()
 		{
 			InitializeComponent ();
-
-			MainPage = new MSOEWorkshopPage ();
+			MainPage = new NavigationPage (new MSOEWorkshopPage ());
 		}
 
 		protected override void OnStart ()

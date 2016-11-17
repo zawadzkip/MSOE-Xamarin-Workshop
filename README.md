@@ -6,6 +6,7 @@
   - [Xamarin Android Player](#xamarin-android-player)
   - [Finalizing Install](#finalizing)
 - [Microsoft Emotion API](#microsoft-emotion-api)
+- [Microsoft Cognitive Services](#microsoft-cognitive-services)
 
 ## Install
 <br><b>Windows and Mac Only<br>
@@ -55,3 +56,6 @@ Right click on the .Droid project and select "Set as startup project", then as l
 
 ### Microsoft Emotion API
 [Sign up](https://www.microsoft.com/cognitive-services/en-us/emotion-api) for the emotion api and fill in the portion of the application where it states "API_KEY", with your API key, *note* you may need to create a Microsoft account to do so, the GitHub OAuth doesn't seem to work well.
+
+### Microsoft Cognitive Services
+[Check out](https://www.microsoft.com/cognitive-services/) other API's offered that might work for you or just be something you want to try out.

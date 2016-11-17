@@ -15,7 +15,6 @@ namespace MSOEWorkshop.iOS
 		{
 			global::Xamarin.Forms.Forms.Init ();
 			ImageCircleRenderer.Init ();
-
 			LoadApplication (new App ());
 
 			return base.FinishedLaunching (app, options);

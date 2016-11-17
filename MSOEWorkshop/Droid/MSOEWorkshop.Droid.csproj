@@ -90,17 +90,17 @@
     <Reference Include="Plugin.Permissions">
       <HintPath>..\packages\Plugin.Permissions.1.2.1\lib\MonoAndroid10\Plugin.Permissions.dll</HintPath>
     </Reference>
-    <Reference Include="Plugin.Media.Abstractions">
-      <HintPath>..\packages\Xam.Plugin.Media.2.6.0\lib\MonoAndroid10\Plugin.Media.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.Media">
-      <HintPath>..\packages\Xam.Plugin.Media.2.6.0\lib\MonoAndroid10\Plugin.Media.dll</HintPath>
-    </Reference>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions">
       <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.8.0.5\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="ImageCircle.Forms.Plugin.Android">
       <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.8.0.5\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Media.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Media.2.6.1\lib\MonoAndroid10\Plugin.Media.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Media">
+      <HintPath>..\packages\Xam.Plugin.Media.2.6.1\lib\MonoAndroid10\Plugin.Media.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
