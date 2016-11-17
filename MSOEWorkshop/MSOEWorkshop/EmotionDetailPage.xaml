@@ -1,11 +1,78 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	x:Class="MSOEWorkshop.EmotionDetailPage">
+	x:Class="MSOEWorkshop.EmotionDetailPage"
+	xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
 	<ContentPage.Content>
-		<StackLayout>
-			<!-- TODO Create a Layout to show the image, and any details you want to show from the emotion you are given. -->
+		<ScrollView>
+		<StackLayout
+			Padding="40">
+			<controls:CircleImage
+				x:Name="circleImage"
+				VerticalOptions="CenterAndExpand"
+				HorizontalOptions="CenterAndExpand"
+				Aspect="AspectFit">
+			</controls:CircleImage>
+			<StackLayout
+				Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+				<StackLayout
+					Orientation="Vertical">
+					<Label 
+						Text="Anger 😡 "
+						FontSize="Medium"
+						FontAttributes="Bold">
+					</Label>
+					<Label 
+						Text="Contempt 😒"
+						FontSize="Medium"
+						FontAttributes="Bold">
+						</Label>
+					<Label 
+						Text="Disgust 😖"
+						FontSize="Medium"
+						FontAttributes="Bold">
+						</Label>
+					<Label 
+						Text="Fear 😱"
+						FontSize="Medium"
+						FontAttributes="Bold">
+						</Label>
+					<Label 
+						Text="Happiness 😁"
+						FontSize="Medium"
+						FontAttributes="Bold">
+						</Label>
+					<Label 
+						Text="Neutral 😐"
+						FontSize="Medium"
+						FontAttributes="Bold">
+						</Label>
+					<Label 
+						Text="Sadness 😔"
+						FontSize="Medium"
+						FontAttributes="Bold">
+						</Label>
+					<Label 
+						Text="Surprise 😮"
+						FontSize="Medium"
+						FontAttributes="Bold">
+						</Label>
+				</StackLayout>
+				<StackLayout
+					Orientation="Vertical">
+					<Label x:Name="angryLabel">
+						</Label>
+					<Label x:Name="contemptLabel"> </Label>
+					<Label x:Name="disgustLabel"></Label>
+					<Label x:Name="fearLabel"></Label>
+					<Label x:Name="happinessLabel"></Label>
+					<Label x:Name="neutralLabel"></Label>
+					<Label x:Name="sadnessLabel"></Label>
+					<Label x:Name="surpriseLabel"></Label>
+				</StackLayout>
+			</StackLayout>
 		</StackLayout>
+			</ScrollView>
 	</ContentPage.Content>
 </ContentPage>
