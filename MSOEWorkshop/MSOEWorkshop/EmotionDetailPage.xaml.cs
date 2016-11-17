@@ -18,6 +18,8 @@ namespace MSOEWorkshop
 			this.emotion = emotion;
 			this.image = image;
 
+			//TODO change label values based off of emotion values.
+
 		}
 	}
 }
