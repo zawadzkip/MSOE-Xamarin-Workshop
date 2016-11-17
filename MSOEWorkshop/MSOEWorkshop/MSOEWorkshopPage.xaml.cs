@@ -50,7 +50,7 @@ namespace MSOEWorkshop
 
 		void CircleImageTapped(View arg1, object arg2)
 		{
-			Navigation.PushAsync(new EmotionDetailPage(currentEmotions, picture));
+			Navigation.PushAsync (new EmotionDetailPage (currentEmotions, picture));
 		}
 
 		private void ProcessEmotions(Emotion[] emotionArray)
@@ -61,9 +61,8 @@ namespace MSOEWorkshop
 				return;
 			}
 			currentEmotions = emotionArray;
-			if (emotionArray.Length == 1)
-			{
-				happinessLabel.Text = string.Format("1 Person, Happiness: {0} {1}", emotionArray.First().Scores.Happiness.ToString("P1"), this.GetSmiley(emotionArray.First().Scores.Happiness));
+			if (emotionArray.Length == 1) {
+				happinessLabel.Text = string.Format ("1 Person, Happiness: {0} {1}", emotionArray.First ().Scores.Happiness.ToString ("P1"), this.GetSmiley (emotionArray.First ().Scores.Happiness));
 				return;
 			}
 			var averageHappiness = 0.0;
