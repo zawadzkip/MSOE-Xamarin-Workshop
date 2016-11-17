@@ -9,7 +9,7 @@ namespace MSOEWorkshop
 {
 	public partial class MSOEWorkshopPage : ContentPage
 	{
-		private Emotion currentEmotion;
+		private Emotion[] currentEmotions;
 		private MediaFile picture;
 		public MSOEWorkshopPage ()
 		{
@@ -46,7 +46,7 @@ namespace MSOEWorkshop
 
 		void CircleImageTapped (View arg1, object arg2)
 		{
-			Navigation.PushAsync (new EmotionDetailPage (currentEmotion, picture));
+			Navigation.PushAsync (new EmotionDetailPage (currentEmotions, picture));
 		}
 
 		private void ProcessEmotions (Emotion [] emotionArray)
@@ -55,6 +55,7 @@ namespace MSOEWorkshop
 				DisplayAlert ("Error", "Could not detect any faces", "Ok");
 				return;
 			}
+			currentEmotions = emotionArray;
 			if (emotionArray.Length == 1) {
 				happinessLabel.Text = string.Format ("1 Person, Happiness: {0} {1}", emotionArray.First ().Scores.Happiness.ToString ("P1"), this.GetSmiley (emotionArray.First ().Scores.Happiness));
 				return;
