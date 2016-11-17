@@ -9,13 +9,13 @@ namespace MSOEWorkshop
 {
 	public partial class EmotionDetailPage : ContentPage
 	{
-		private Emotion emotion;
+		private Emotion[] emotions;
 		private MediaFile image;
-		public EmotionDetailPage (Emotion emotion, MediaFile image)
+		public EmotionDetailPage (Emotion[] emotions, MediaFile image)
 		{
 			InitializeComponent ();
 			this.Title = "Image Details";
-			this.emotion = emotion;
+			this.emotions = emotions;
 			this.image = image;
 
 			//TODO change label values based off of emotion values.
