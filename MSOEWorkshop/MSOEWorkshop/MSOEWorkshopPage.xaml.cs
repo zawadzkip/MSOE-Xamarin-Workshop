@@ -39,6 +39,7 @@ namespace MSOEWorkshop
 					var stream = picture.GetStream();
 					return stream;
 				});
+				happinessLabel.Text = "Loading...";
 				var emotions = await WebServices.GetHappinessAsync(picture.GetStream());
 				currentEmotions = emotions;
 				this.ProcessEmotions(emotions);

@@ -16,10 +16,7 @@ namespace MSOEWorkshop
 		{
 			InitializeComponent();
 			this.Title = "Image Details";
-			if (emotions != null)
-			{
-				this.emotions = emotions;
-			}
+			this.emotions = emotions;
 			if (image != null)
 			{
 				this.image = image;
@@ -29,13 +26,8 @@ namespace MSOEWorkshop
 					return stream;
 				});
 			}
-			if (emotions == null || image == null)
-			{
-				DisplayAlert("Error", "No image or emotions was provided", "Ok");
-				Navigation.PopToRootAsync();
-			}
-
 			this.SetEmotionLabels();
+
 
 
 		}
